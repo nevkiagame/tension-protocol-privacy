@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--
+  Tension Protocol gizlilik politikası · Son güncelleme: 29 Ekim 2026
+  Not: Bu metin hukuki tavsiye değildir; mümkünse bir hukuk danışmanına kontrol ettirin.
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tension Protocol · Gizlilik Politikası / Privacy Policy</title>
+<meta name="description" content="Tension Protocol mobil oyunu gizlilik politikası ve KVKK aydınlatma metni. Privacy policy for the Tension Protocol mobile game.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4F6FA; --surface: #FFFFFF; --ink: #141A2E; --muted: #55607A;
+    --line: #DCE1EC; --accent: #0B7D70; --memory: #6D55D9; --mark: #FFF1C9; --mark-ink: #6B4B00;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0B1020; --surface: #161E33; --ink: #ECEFF7; --muted: #9AA6C2;
+      --line: #2A3552; --accent: #5EEAD4; --memory: #A78BFA; --mark: #3A2E10; --mark-ink: #FFD98A;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  header svg { flex: none; width: 56px; height: 56px; }
+  h1, h2 { font-family: Montserrat, -apple-system, "Segoe UI", sans-serif; letter-spacing: -0.01em; }
+  h1 { font-weight: 800; font-size: clamp(1.6rem, 4.5vw, 2.1rem); line-height: 1.2; margin: 0; }
+  .app { color: var(--muted); font-size: 0.95rem; margin: 0.15rem 0 0; }
+  h2 { font-weight: 800; font-size: 1.2rem; margin: 2.4rem 0 0.6rem; }
+  h3 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+  p, li { max-width: 68ch; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.3rem 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; margin: 0 0 1.5rem; background: var(--surface); }
+  .lang button {
+    font: 600 0.9rem Montserrat, sans-serif; border: 0; background: none; color: var(--muted);
+    padding: 0.45rem 1rem; border-radius: 999px; cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+  .summary {
+    background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--memory);
+    border-radius: 14px; padding: 1rem 1.25rem; margin: 1rem 0 0.5rem;
+  }
+  .summary h2 { margin-top: 0.2rem; }
+  .summary ul { margin: 0.4rem 0 0.2rem; }
+  .draft {
+    background: var(--mark); color: var(--mark-ink); border-radius: 12px;
+    padding: 0.9rem 1.1rem; margin: 0 0 1.5rem; font-size: 0.95rem;
+  }
+  mark.ph { background: var(--mark); color: var(--mark-ink); padding: 0 0.25em; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+  .table-wrap { overflow-x: auto; margin: 0.6rem 0; }
+  th, td { text-align: left; vertical-align: top; padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--line); }
+  th { font-family: Montserrat, sans-serif; font-weight: 600; font-size: 0.85rem; color: var(--muted); }
+  .meta { color: var(--muted); font-size: 0.9rem; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  .js [data-lang]:not(.active) { display: none; }
+  @media (prefers-reduced-motion: no-preference) {
+    header svg .orbit { transform-origin: 32px 32px; animation: spin 14s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <rect width="64" height="64" rx="15" fill="#10172A"/>
+      <circle cx="32" cy="32" r="20" fill="none" stroke="#212B45" stroke-width="4"/>
+      <g class="orbit">
+        <path d="M32 12 A20 20 0 1 1 13.2 38.8" fill="none" stroke="#5EEAD4" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="13.2" cy="38.8" r="3.2" fill="#F4F5FA"/>
+      </g>
+      <circle cx="32" cy="32" r="12" fill="#161E33"/>
+      <circle cx="32" cy="32" r="5.5" fill="#5EEAD4"/>
+    </svg>
+    <div>
+      <h1 id="title">Gizlilik Politikası</h1>
+      <p class="app">Tension Protocol · iOS ve Android</p>
+    </div>
+  </header>
+
+  <div class="lang" role="group" aria-label="Dil / Language">
+    <button type="button" data-set="tr" aria-pressed="true">Türkçe</button>
+    <button type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+
+  <!-- ================================================================ TÜRKÇE -->
+  <article data-lang="tr" lang="tr" class="active" id="tr">
+
+    <p class="meta">Yürürlük tarihi: 29 Ekim 2026 · Son güncelleme: 29 Ekim 2026</p>
+
+    <section class="summary" aria-labelledby="tr-ozet">
+      <h2 id="tr-ozet">Kısaca</h2>
+      <ul>
+        <li>Oyunda hesap, kayıt veya giriş yok. Adınızı, e-postanızı ya da telefon numaranızı istemiyoruz.</li>
+        <li>İlerlemeniz, skorlarınız ve ayarlarınız yalnızca cihazınızda saklanır; bize gönderilmez.</li>
+        <li>Reklam yalnızca siz istediğinizde, ekstra hak kazanmak için gösterilir. Reklamları Google AdMob sunar.</li>
+        <li>Kişiselleştirilmiş reklam isteğe bağlıdır. Onay vermezseniz yine reklam izleyebilirsiniz; reklamlar kişiselleştirilmez.</li>
+      </ul>
+    </section>
+
+    <h2>1. Veri sorumlusu</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu:</p>
+    <ul>
+      <li>Ad soyad: Yaren Kıy</li>
+      <li>E-posta: <a href="mailto:nevkiagame@gmail.com">nevkiagame@gmail.com</a></li>
+    </ul>
+
+    <h2>2. Oyunun cihazınızda sakladığı bilgiler</h2>
+    <p>Oyun aşağıdaki bilgileri yalnızca cihazınızın yerel depolamasında tutar. Bu bilgiler bize ya da üçüncü kişilere gönderilmez ve bizim tarafımızdan görülemez:</p>
+    <ul>
+      <li>Açılan bölümler, bölüm skorları ve elmaslar, günlük görev serisi, sonsuz mod rekoru</li>
+      <li>Ses, müzik, titreşim, hareket ve dil ayarları</li>
+      <li>Reklam tercihiniz (kişiselleştirilmiş reklama onay verip vermediğiniz)</li>
+    </ul>
+    <p>Bu bilgileri oyunda <em>Ayarlar → İlerlemeyi sıfırla</em> ile ya da oyunu cihazınızdan silerek kaldırabilirsiniz.</p>
+
+    <h2>3. Reklamlar (Google AdMob)</h2>
+    <p>Haklarınız bittiğinde "Reklam izle, +1 hak" seçeneğini kullanırsanız, reklam ortağımız Google tarafından bir ödüllü reklam gösterilir. Reklam sağlayıcı: Google Ireland Limited ve Google LLC ("Google").</p>
+    <h3>İşlenen veriler</h3>
+    <ul>
+      <li>Cihaz reklam kimliği (iOS'ta IDFA, Android'de Reklam Kimliği), yalnızca izin verilmişse</li>
+      <li>IP adresi ve buna dayalı yaklaşık konum (ülke/şehir düzeyi)</li>
+      <li>Cihaz ve işletim sistemi bilgileri (model, sürüm, dil, ekran)</li>
+      <li>Reklam etkileşimleri (gösterim, izleme, tıklama) ve uygulama kullanım bilgileri</li>
+      <li>Hata ve performans bilgileri</li>
+    </ul>
+    <h3>Amaçlar</h3>
+    <ul>
+      <li>Reklamın gösterilmesi ve ödülün (ekstra hak) verilmesi</li>
+      <li>Reklam gösterim sıklığının sınırlanması, ölçüm ve raporlama</li>
+      <li>Sahtekârlık ve kötüye kullanımın önlenmesi, güvenlik</li>
+      <li>Yalnızca açık rızanız varsa: reklamların ilgi alanlarınıza göre kişiselleştirilmesi</li>
+    </ul>
+    <h3>Kişiselleştirme tercihi</h3>
+    <p>Oyunu ilk açtığınızda bir reklam tercihi ekranı gösterilir. Kişiselleştirilmiş reklam kutusu önceden işaretli değildir. Onay vermezseniz Google'dan kişiselleştirilmemiş reklam istenir; bu durumda da reklamın gösterilmesi, ölçümü ve güvenliği için sınırlı veri işlenir. Tercihinizi istediğiniz zaman <em>Ayarlar → Reklam tercihi</em> bölümünden değiştirebilirsiniz.</p>
+    <p>Avrupa Ekonomik Alanı ve Birleşik Krallık'taki kullanıcılara ayrıca Google'ın onay formu gösterilebilir. iOS'ta reklam kimliğine erişim, Apple'ın "Uygulama İzleme Şeffaflığı" iznine bağlıdır; izin vermezseniz reklam kimliği paylaşılmaz.</p>
+    <p>Google'ın verileri nasıl kullandığı hakkında: <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a> ve <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Google, iş ortaklarının site ve uygulamalarından gelen bilgileri nasıl kullanır</a>.</p>
+
+    <h2>4. Hukuki sebepler</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">İşleme</th><th scope="col">Hukuki sebep (KVKK)</th></tr></thead>
+        <tbody>
+          <tr><td>Kişiselleştirilmiş reklam</td><td>Açık rıza (m. 5/1)</td></tr>
+          <tr><td>Talep ettiğiniz ödüllü reklamın gösterilmesi ve ödülün verilmesi</td><td>Bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması (m. 5/2-c): reklamı siz talep edersiniz, karşılığında ekstra hak verilir</td></tr>
+          <tr><td>Ölçüm, sıklık sınırlama, sahtekârlığın önlenmesi</td><td>Temel hak ve özgürlüklerinize zarar vermemek kaydıyla meşru menfaat (m. 5/2-f)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>5. Yurt dışına aktarım</h2>
+    <p>Reklam hizmeti kapsamında işlenen veriler, Google'ın Türkiye dışındaki (Amerika Birleşik Devletleri dahil) sunucularında işlenebilir. Bu aktarım, KVKK'nın 9. maddesinde öngörülen şartlara uygun olarak, Google'ın reklam hizmetleri için sunduğu veri işleme koşulları ve standart sözleşme hükümleri çerçevesinde gerçekleştirilir. Kişiselleştirilmiş reklamlar yalnızca açık rızanız olması hâlinde gösterilir.</p>
+
+    <h2>6. Saklama süresi</h2>
+    <ul>
+      <li>Cihazınızdaki oyun verileri: oyunu silene ya da ilerlemeyi sıfırlayana kadar.</li>
+      <li>Google'ın işlediği reklam verileri: Google'ın kendi saklama politikalarına göre.</li>
+    </ul>
+
+    <h2>7. Çocuklar</h2>
+    <p>Oyun 13 yaşından küçük çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek kişisel veri toplanmaz. 13 yaşından küçük bir çocuğun reklam aracılığıyla veri paylaştığını düşünüyorsanız bize yazın; gerekli adımları atarız.</p>
+
+    <h2>8. Haklarınız (KVKK m. 11)</h2>
+    <p>Veri sorumlusuna başvurarak şu haklarınızı kullanabilirsiniz:</p>
+    <ul>
+      <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme ve işlenmişse bilgi talep etme</li>
+      <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+      <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+      <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+      <li>KVKK'nın 7. maddesi çerçevesinde silinmesini veya yok edilmesini isteme</li>
+      <li>Düzeltme ve silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
+      <li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkmasına itiraz etme</li>
+      <li>Kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+    </ul>
+    <p>Başvurularınızı <a href="mailto:nevkiagame@gmail.com">nevkiagame@gmail.com</a> adresine iletebilirsiniz. Başvurular en geç 30 gün içinde ücretsiz olarak yanıtlanır.</p>
+    <p>Açık rızanızı geri almak için <em>Ayarlar → Reklam tercihi</em> bölümünü kullanabilirsiniz. Cihaz düzeyinde ayrıca:</p>
+    <ul>
+      <li>iOS: Ayarlar → Gizlilik ve Güvenlik → İzleme</li>
+      <li>Android: Ayarlar → Gizlilik (veya Google) → Reklamlar → Reklam kimliğini sıfırla / sil</li>
+    </ul>
+
+    <h2>9. Değişiklikler</h2>
+    <p>Bu metni güncelleyebiliriz. Önemli değişikliklerde yürürlük tarihi güncellenir ve gerekirse oyun içinde bildirim yapılır.</p>
+
+    <h2>10. İletişim</h2>
+    <p>Sorularınız için: <a href="mailto:nevkiagame@gmail.com">nevkiagame@gmail.com</a></p>
+  </article>
+
+  <!-- ================================================================ ENGLISH -->
+  <article data-lang="en" lang="en" id="en">
+
+    <p class="meta">Effective date: October 29, 2026 · Last updated: October 29, 2026</p>
+
+    <section class="summary" aria-labelledby="en-summary">
+      <h2 id="en-summary">In short</h2>
+      <ul>
+        <li>There are no accounts, sign-ups or logins. We don't ask for your name, email or phone number.</li>
+        <li>Your progress, scores and settings are stored only on your device and are never sent to us.</li>
+        <li>Ads only appear when you choose to watch one for an extra life. Ads are served by Google AdMob.</li>
+        <li>Personalized ads are optional. Without consent you can still watch ads; they just won't be personalized.</li>
+      </ul>
+    </section>
+
+    <h2>1. Who we are</h2>
+    <ul>
+      <li>Name: Yaren Kıy</li>
+      <li>Email: <a href="mailto:nevkiagame@gmail.com">nevkiagame@gmail.com</a></li>
+    </ul>
+
+    <h2>2. Data stored on your device</h2>
+    <p>The game keeps the following only in your device's local storage. It is not sent to us or anyone else, and we cannot see it:</p>
+    <ul>
+      <li>Unlocked levels, level scores and diamonds, daily streak, endless mode best score</li>
+      <li>Sound, music, vibration, motion and language settings</li>
+      <li>Your ad preference (whether you consented to personalized ads)</li>
+    </ul>
+    <p>You can remove this data with <em>Settings → Reset progress</em> or by uninstalling the game.</p>
+
+    <h2>3. Advertising (Google AdMob)</h2>
+    <p>If you choose "Watch ad, +1 life" when you run out of lives, a rewarded ad is shown by our ad partner, Google Ireland Limited and Google LLC ("Google").</p>
+    <h3>Data processed</h3>
+    <ul>
+      <li>Device advertising identifier (IDFA on iOS, Advertising ID on Android), only where permitted</li>
+      <li>IP address and approximate location derived from it (country/city level)</li>
+      <li>Device and operating system information (model, version, language, screen)</li>
+      <li>Ad interactions (impressions, views, clicks) and app usage information</li>
+      <li>Crash and performance information</li>
+    </ul>
+    <h3>Purposes</h3>
+    <ul>
+      <li>Showing the ad and granting the reward (extra life)</li>
+      <li>Frequency capping, measurement and reporting</li>
+      <li>Fraud prevention and security</li>
+      <li>Only with your consent: personalizing ads to your interests</li>
+    </ul>
+    <h3>Your choice</h3>
+    <p>The first time you open the game, an ad preference screen is shown. The personalized ads box is not pre-checked. Without consent, non-personalized ads are requested; limited data is still processed to show, measure and secure the ad. You can change your choice anytime in <em>Settings → Ad preferences</em>.</p>
+    <p>Users in the European Economic Area and the UK may also see Google's consent form. On iOS, access to the advertising identifier requires Apple's App Tracking Transparency permission; if you decline, the identifier is not shared.</p>
+    <p>Learn more: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
+
+    <h2>4. International transfers</h2>
+    <p>Advertising data may be processed on Google servers outside your country, including in the United States.</p>
+
+    <h2>5. Retention</h2>
+    <ul>
+      <li>Game data on your device: until you uninstall the game or reset progress.</li>
+      <li>Advertising data processed by Google: according to Google's retention policies.</li>
+    </ul>
+
+    <h2>6. Children</h2>
+    <p>The game is not directed at children under 13, and we do not knowingly collect personal data from them. If you believe a child under 13 has shared data through an ad, contact us and we will take appropriate steps.</p>
+
+    <h2>7. Your rights</h2>
+    <p>Depending on where you live, you may have the right to access, correct or delete your personal data, to object to or restrict processing, and to withdraw consent. Because we don't store your data on our servers, most requests concerning ads are handled by Google. Contact us at <a href="mailto:nevkiagame@gmail.com">nevkiagame@gmail.com</a> and we will help.</p>
+    <ul>
+      <li>iOS: Settings → Privacy &amp; Security → Tracking</li>
+      <li>Android: Settings → Privacy (or Google) → Ads → Reset / delete advertising ID</li>
+    </ul>
+
+    <h2>8. Changes</h2>
+    <p>We may update this policy. For significant changes, we will update the effective date and, where needed, notify you in the game.</p>
+
+    <h2>9. Contact</h2>
+    <p>Questions: <a href="mailto:nevkiagame@gmail.com">nevkiagame@gmail.com</a></p>
+  </article>
+
+  <footer>© <span id="year">2026</span> Yaren Kıy · Tension Protocol</footer>
+</div>
+
+<script>
+  (function () {
+    document.documentElement.classList.add("js");
+    var titles = { tr: "Gizlilik Politikası", en: "Privacy Policy" };
+    function show(lang) {
+      document.querySelectorAll("[data-lang]").forEach(function (el) {
+        el.classList.toggle("active", el.getAttribute("data-lang") === lang);
+      });
+      document.querySelectorAll("[data-set]").forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-set") === lang));
+      });
+      document.documentElement.lang = lang;
+      document.getElementById("title").textContent = titles[lang];
+    }
+    document.querySelectorAll("[data-set]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var lang = b.getAttribute("data-set");
+        history.replaceState(null, "", "#" + lang);
+        show(lang);
+      });
+    });
+    var hash = location.hash.replace("#", "");
+    var initial = hash === "en" || hash === "tr" ? hash
+                : ((navigator.language || "").toLowerCase().indexOf("tr") === 0 ? "tr" : "en");
+    show(initial);
+    document.getElementById("year").textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
